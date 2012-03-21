@@ -1,0 +1,4 @@
+severity  = 3
+
+[RegularExpressions::RequireExtendedFormatting]
+severity = 2

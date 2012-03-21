@@ -1,0 +1,33 @@
+Viper
+
+Viper is a system that will read a list of load balancers, VIPs on 
+those load balancers and members in those VIPs from a data source 
+and configure those load balancers to use them. Viper to talk to any 
+type of load balancer that a plugin has been written for. Writing 
+plugins is fairly straight forward; its just a handful of expect 
+commands.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+        perl Makefile.PL
+        make
+        make test
+        make install
+
+Modify and copy the configuration file (in conf/ directory of this 
+distribution) to /etc/viper.conf or a location specified in the 
+VIPER_CONFIG_FILE environment variable.
+
+Copy viper_daemon.pl to /usr/local/bin/ and add it to cron.
+
+DEPENDENCIES
+
+See Makefile.PL
+
+COPYRIGHT AND LICENSE
+
+Copyright (c) 2008, Yahoo! Inc.  All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
